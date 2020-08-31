@@ -1,6 +1,24 @@
-# rails6-docker-docs
-  
-Docker公式の[Quickstart: Compose and Rails](https://docs.docker.com/compose/rails/)に従い、Rails6 on Dockerをセットアップする  
-Rails 6.0.3  
-Ruby 2.7.1  
+# README
 
+This README would normally document whatever steps are necessary to get the
+application up and running.
+
+Things you may want to cover:
+
+* Ruby version
+
+* System dependencies
+
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...
