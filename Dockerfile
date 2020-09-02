@@ -1,8 +1,11 @@
 FROM ruby:2.7.1
 
-# Install Yarn Stable Version(1.22.5) via Debian package repository.
-# https://classic.yarnpkg.com/en/docs/install#debian-stable
-RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - \
+    # Node.js v12.x (LTS version as of 20200903)
+    # https://github.com/nodesource/distributions/blob/master/README.md#installation-instructions
+RUN curl -sL https://deb.nodesource.com/setup_12.x | bash - \
+    # Yarn Stable Version(1.22.5) via Debian package repository.
+    # https://classic.yarnpkg.com/en/docs/install#debian-stable
+    && curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - \
     && echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list \
     # Install packages
     && apt-get update -qq && apt-get install -y nodejs postgresql-client yarn
