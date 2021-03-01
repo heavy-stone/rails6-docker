@@ -13,7 +13,8 @@ RUN wget https://github.com/yarnpkg/yarn/releases/download/v1.22.10/yarn_1.22.10
     # https://github.com/nodesource/distributions/blob/master/README.md#installation-instructions
     && curl -sL https://deb.nodesource.com/setup_14.x | bash - \
     # Install packages
-    && apt-get update -qq && apt-get install -y nodejs
+    && apt-get update -qq \
+    && apt-get install -y nodejs mariadb-client
 
 RUN mkdir /app
 WORKDIR /app
