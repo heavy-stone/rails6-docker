@@ -14,7 +14,7 @@ RUN wget https://github.com/yarnpkg/yarn/releases/download/v1.22.10/yarn_1.22.10
     && curl -sL https://deb.nodesource.com/setup_14.x | bash - \
     # Install packages
     && apt-get update -qq \
-    && apt-get install -y nodejs mariadb-client
+    && apt-get install -y nodejs mariadb-client vim less
 
 RUN mkdir /app
 WORKDIR /app
