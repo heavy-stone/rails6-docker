@@ -1,0 +1,15 @@
+// 下記はMDBの使用例のため、不要な場合は削除すること https://mdbootstrap.com/docs/b4/jquery/javascript/google-maps/
+.map-container{
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+  margin-bottom: 20px;
+}
+.map-container iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
